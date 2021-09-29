@@ -3,12 +3,15 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 mt-80"  v-for="soudou in info" :key="soudou">
             <div class="card bg-white d-flex align-items-center justify-content-center">
-                <div class="w-100"><img src="https://images.pexels.com/photos/7467850/pexels-photo-7467850.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="rounded-circle"></div>
+                <div class="w-100">{{soudou.image}}<img src="https://images.pexels.com/photos/7467850/pexels-photo-7467850.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="rounded-circle"></div>
                 <div class="text-center ">
                     <p class="name">{{soudou.name}}</p>
                     <p class="job">{{soudou.statut}}</p>  
                     <p class="dis">{{soudou.mail}}</p>
-                    <p><button class="btn btn-success">Consulter ce talent</button></p>
+                  <p><button class="btn btn-success">Consulter ce talent </button>
+                   <button class="boutton btn btn-success"> <i class="fas fa-pen"></i></button>
+                    </p>
+                   
                 </div>
             </div>
         </div>
@@ -135,5 +138,9 @@ img {
 .mt-80 {
     margin-top: 90px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.boutton{
+    margin-left: 12px;
 }
 </style>
