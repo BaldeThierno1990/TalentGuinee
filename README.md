@@ -1,5 +1,4 @@
-# Soudou Version1
-Soudou projet immobilier ou les utilisateur pourront rechercher, ajouter, modifier et supprimer leur bien.
-#objectif
-l'objectif du projet est de digitaliser l'immobilier en Guinée permettre à tout les Guinèens et Guinèennes de louer de mettre en location ou en vente leur bien immobilier.
+# Talents Guinée Version1
+Soudou projet pour repertorier les talent de mon pays pour permettre à l'Etat et aux entreprise de les detecter et rentrer en contact avec eux  ou les utilisateur pourront rechercher, ajouter, modifier et supprimer leur profil.
+
 
