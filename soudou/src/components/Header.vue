@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/"><img src="@/assets/img/logo.png" alt="logo" width="90"></a>
+    <a class="navbar-brand" href="/"><img src="@/assets/img/logo.jpg" alt="logo" width="50"></a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,7 +9,7 @@
     <div class="navbar-collapse collapse" id="navbarColor01" style="">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="/">Accueil
+          <a class="nav-link active" href="/">Nos Talents
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
@@ -19,10 +19,10 @@
         </li>
          <li class="nav-item">
       
-             <router-link class="nav-link" to="/registration">Inscription</router-link>
+             <router-link class="nav-link" to="/login">connexion</router-link>
         </li>
         <li class="nav-item">
-           <router-link class="nav-link" to="/view">Connexion</router-link>
+           <router-link class="nav-link" to="/"><img src="@/assets/img/drapeau.jpeg" alt="" width="50"></router-link>
         </li>
           
       </ul>

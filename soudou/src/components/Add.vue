@@ -6,7 +6,7 @@
     
     
     <form  @submit.prevent="onCreatePost">
-       <div class="alert alert-alert-success" v-if="isSuccess">
+       <div class="alert alert-success" v-if="isSuccess">
         Bien ajouté avec succè! merci pour la confiance
      </div>
       

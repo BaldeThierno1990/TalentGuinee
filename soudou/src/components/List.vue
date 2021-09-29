@@ -12,6 +12,11 @@
                 </div>
             </div>
         </div>
+         <ul v-if="errors && errors.length">
+        <li v-for="error in errors" :key="error">
+        {{error.message}}
+      </li>
+    </ul>
       
     </div>
 </div>
@@ -66,7 +71,7 @@ img {
     width: 100%;
     border-radius: 5px;
     border: none;
-   
+    background-color: #FFFF;
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -128,6 +133,7 @@ img {
 }
 
 .mt-80 {
-    margin-top: 90px
+    margin-top: 90px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 </style>
