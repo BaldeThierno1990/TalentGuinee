@@ -2,25 +2,30 @@
  
     
   <div class="connexion">
+   
     
     
     
     <form  @submit.prevent="onCreatePost">
+      <div>
+         <h1> champs obligatoires</h1>
+      </div>
        <div class="alert alert-success" v-if="isSuccess">
-        Bien ajouté avec succè! merci pour la confiance
+        Talent ajouté avec succè! merci pour la confiance
      </div>
       
 
       <div class="inputs">
-        <input type="text" placeholder="image" v-model="image" />
-          <input type="text" placeholder="name" v-model="name"/>
-         <input type="text" placeholder="statut" v-model="statut"/>
-          <input type="text" placeholder="description" v-model="description" />
-          <input type="text" placeholder="pays" v-model="pays" />
-        <input type="text" placeholder="ville" v-model="ville" />
-        <input type="text" placeholder="phone"  v-model="phone"/>
+       <!-- <input type="text" placeholder="image" v-model="image"/>-->
+        <input type="file" @change="onFileChange">
+          <input type="text" placeholder="name" v-model="name" required/>
+         <input type="text" placeholder="statut" v-model="statut" required/>
+          <input type="text" placeholder="description" v-model="description" required/>
+          <input type="text" placeholder="pays" v-model="pays" required/>
+        <input type="text" placeholder="ville" v-model="ville" required />
+        <input type="text" placeholder="phone"  v-model="phone" required/>
        
-        <input type="text" placeholder="mail" v-model="mail" />
+        <input type="text" placeholder="mail" v-model="mail" required />
       </div>
       <div align="center">
         <button type="submit">valider</button>
@@ -155,8 +160,9 @@ export default {
     },
   },
   
+   }
  
-}
+
 
 </script>
 

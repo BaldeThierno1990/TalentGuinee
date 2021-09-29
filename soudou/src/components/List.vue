@@ -4,6 +4,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6 mt-80"  v-for="soudou in info" :key="soudou">
             <div class="card bg-white d-flex align-items-center justify-content-center">
                 <div class="w-100">{{soudou.image}}<img src="https://images.pexels.com/photos/7467850/pexels-photo-7467850.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="rounded-circle"></div>
+              
                 <div class="text-center ">
                     <p class="name">{{soudou.name}}</p>
                     <p class="job">{{soudou.statut}}</p>  
